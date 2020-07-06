@@ -1,0 +1,24 @@
+body{
+	font-family: "Ubuntu", sans-serif;
+}
+a.link{
+	text-decoration: none;
+}
+
+.link-icon{
+	font-size: 2em;
+	color: White;
+}
+.link-icon:hover{
+	color: #29D6F1;
+	transition-duration: 0.5s;
+}
+.nav-main{
+	display: flex;
+	height: 60px;
+ 	padding: auto;
+}
+.social-icons span{
+	flex: 1;
+  	margin-left: 15px;
+}
