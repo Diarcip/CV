@@ -2,7 +2,58 @@
 	margin: 0;
 	padding: 0;
 }
-
 body{
 	font-family: "Ubuntu", sans-serif;
+}
+.header{
+	display: flex;
+	padding: 2.5rem 0;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.information{
+	display: flex;
+	flex-direction: column;
+	padding-left: 5rem;
+	justify-content: center;
+}
+.information-item{
+	display: flex;
+	align-items: center;
+}
+.information-item > h1{
+	margin: 0;
+}
+.contact{
+	font-size: 1.3rem;
+	padding: 0;
+}
+.information-item > span, .information-item > span > a{
+	text-decoration: none;
+	font-size: 1rem;
+	color: black;
+}
+.item-icon{
+	width: 2rem;
+	align-items: center;
+}
+.title{
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.img-profile{
+	width: 14rem;
+	border-radius: 50%;
+	padding: 1rem 0;
+}
+
+
+/* -------Responsive Design-------- */
+
+@media only screen and (max-width: 652px) {
+	.information{
+		padding-left: 0;
+	}
 }
