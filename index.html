@@ -41,14 +41,27 @@
     />
   </head>
   <body>
-    <nav class="navigation-bar">
+    <nav class="navigation-bar-responsive">
+      <div class="nav-primaryicon">
+        <span class="navicon"><i class="fas fa-terminal"></i> DIEGO </span>
+        <img
+          class="semicolon semicolon-responsive"
+          src="https://img.icons8.com/material/42/1f1f1f/semicolon.png"
+        />
+        <!-- Source semicolon: https://icons8.com/ -->
+      </div>
+      <button class="menubtn" onclick="MenuClick();">
+        <span class="menubtn-icon"><i class="fas fa-bars"></i></span>
+      </button>
+    </nav>
+    <nav id="navigation-bar" class="navigation-bar">
       <div class="nav-primaryicon">
         <span class="navicon"><i class="fas fa-terminal"></i> DIEGO </span>
         <img
           class="semicolon"
           src="https://img.icons8.com/material/42/1f1f1f/semicolon.png"
         />
-        <!-- Source semicolon: https://icons8.com/ -->
+        <!-- Source semicolon: https://icons8.com/  -->
       </div>
 
       <div class="nav-links">
@@ -68,6 +81,11 @@
           <li class="nav-item">
             <i class="fas fa-id-card nav-item-icon"></i
             ><span class="nav-item-text">Contacto</span>
+          </li>
+          <li class="nav-item nav-item-exit">
+            <button class="btnexit" onclick="ExitClick();">
+              <i class="fas fa-times-circle"></i>
+            </button>
           </li>
         </ul>
       </div>
