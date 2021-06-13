@@ -1,0 +1,50 @@
+/* -------Responsive Design-------- */
+
+/* TAMAÑO EN EL QUE EL TITULO PASA A ESTAR DEBAJO DE LA FOTO */
+@media screen and (max-width: 930px) {
+  .welcome-section {
+    flex-direction: column;
+  }
+  .img-profile {
+    margin-right: 0 !important;
+  }
+}
+
+/* TAMAÑO EN EL QUE EL MENU SE HACE HAMBURGUESA */
+@media screen and (max-width: 810px) {
+  .nav-box {
+    background-color: var(--main-yellow);
+    position: fixed;
+    left: 100%;
+    top: var(--nav-height);
+    width: 100%;
+    height: calc(100% - var(--nav-height));
+    overflow-y: auto;
+    transition: ease 0.5s;
+  }
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  .nav-url {
+    padding-top: 1rem;
+  }
+  .nav-toggle {
+    display: block;
+    transition: ease 0.5s;
+  }
+  .nav-box-visible {
+    left: 0%;
+  }
+}
+
+/* TAMAÑO DONDE EL TAMAÑO DEL TITULO SE REDUCE*/
+@media screen and (max-width: 550px) {
+  .tittle-primary {
+    font-size: 1.7rem !important;
+  }
+  .tittle-secondary {
+    font-size: 1.5rem !important;
+  }
+}

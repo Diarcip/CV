@@ -25,89 +25,77 @@
       crossorigin="anonymous"
     ></script>
     <!-- FONTS -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Assistant:wght@800&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- NAV RESPONSIVE -->
-
-    <nav class="navigation-bar-responsive">
-      <div class="nav-primaryicon">
-        <span class="navicon"><i class="fas fa-terminal"></i> DIEGO </span>
-        <img
-          class="semicolon semicolon-responsive"
-          src="https://img.icons8.com/material/42/1f1f1f/semicolon.png"
-        />
-        <!-- Source semicolon: https://icons8.com/ -->
-      </div>
-      <button class="menubtn" onclick="MenuClick();">
-        <span class="menubtn-icon"><i class="fas fa-bars"></i></span>
-      </button>
-    </nav>
-
-    <!-- NAV FULL SCREEN -->
-
-    <nav id="navigation-bar" class="navigation-bar">
-      <div class="nav-primaryicon">
-        <span class="navicon"><i class="fas fa-terminal"></i> DIEGO </span>
-        <img
-          class="semicolon"
-          src="https://img.icons8.com/material/42/1f1f1f/semicolon.png"
-        />
-        <!-- Source semicolon: https://icons8.com/  -->
-      </div>
-
-      <div class="nav-links">
-        <ul class="nav-list">
-          <a href="#header">
-            <li class="nav-item">
-              <i class="fas fa-home nav-item-icon"></i
-              ><span class="nav-item-text">Inicio</span>
-            </li>
-          </a>
-          <a href="#about">
-            <li class="nav-item">
-              <i class="fas fa-info-circle nav-item-icon"></i
-              ><span class="nav-item-text">Sobre mí</span>
-            </li>
-          </a>
-          <a href="#">
-            <li class="nav-item">
-              <i class="fas fa-project-diagram nav-item-icon"></i
-              ><span class="nav-item-text">Proyectos</span>
-            </li>
-          </a>
-          <a href="#contact">
-            <li class="nav-item">
-              <i class="fas fa-id-card nav-item-icon"></i
-              ><span class="nav-item-text">Contacto</span>
-            </li>
-          </a>
-          <li class="nav-item nav-item-exit">
-            <button class="btnexit" onclick="ExitClick();">
-              <i class="fas fa-times-circle"></i>
-            </button>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <!-- HEADER -->
+    <header class="header">
+      <nav id="navigation-bar" class="navigation-bar">
+        <div class="nav-primaryicon">
+          <span class="navicon"><i class="fas fa-terminal"></i> DIEGO </span
+          ><span class="semicolon">;</span>
+        </div>
+        <button id="nav-toggle" class="nav-toggle" onclick="MenuClick();">
+          <i id="burger-icon" class="fas fa-bars"></i>
+        </button>
+        <div id="nav-box" class="nav-box">
+          <ul class="nav-list">
+            <a href="#welcome" class="nav-url" onclick="MenuClick();">
+              <li class="nav-item">
+                <i class="fas fa-home nav-item-icon"></i
+                ><span class="nav-item-text">Inicio</span>
+              </li>
+            </a>
+            <a href="#about" class="nav-url" onclick="MenuClick();">
+              <li class="nav-item">
+                <i class="fas fa-info-circle nav-item-icon"></i
+                ><span class="nav-item-text">Sobre mí</span>
+              </li>
+            </a>
+            <a href="#" class="nav-url" onclick="MenuClick();">
+              <li class="nav-item">
+                <i class="fas fa-project-diagram nav-item-icon"></i
+                ><span class="nav-item-text">Proyectos</span>
+              </li>
+            </a>
+            <a href="#contact" class="nav-url" onclick="MenuClick();">
+              <li class="nav-item">
+                <i class="fas fa-id-card nav-item-icon"></i
+                ><span class="nav-item-text">Contacto</span>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <!-- CONTENT -->
 
     <!-- HEADER -->
-    <section id="header" class="header-section">
+    <section id="welcome" class="welcome-section">
       <img class="img-profile" src="img/profile.jpeg" />
       <div class="introduction">
         <h1 class="tittle-secondary">¡Hola!</h1>
@@ -124,7 +112,7 @@
       </div>
     </section>
     <!-- CONTACT -->
-    <section id="contact" class="contact-section">
+    <footer id="contact" class="footer">
       <div class="cv">
         <a href="/CV/docs/CV-DiegoArveyCifuentesPena.pdf">
           <button class="btn btn-warning" download="CV-DiegoArveyCifuentesPena">
@@ -150,7 +138,7 @@
         </a>
       </div>
       <p>Copyright © 2021 Diego Cifuentes</p>
-    </section>
+    </footer>
 
     <!-- SCRIPT -->
     <script type="text/javascript" src="js/main.js"></script>

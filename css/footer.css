@@ -1,0 +1,24 @@
+.footer {
+  font-size: 2rem;
+  text-align: center;
+}
+.cv {
+  margin: 2rem 0;
+}
+.btn-warning {
+  color: white;
+}
+
+.social-icons a {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 0 0.3rem;
+  text-decoration: none;
+  color: var(--main-dark);
+}
+.social-icons a:hover {
+  color: var(--main-yellow);
+}
+.footer p {
+  font-size: 1rem;
+}
